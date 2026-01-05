@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- TÍTULO DA PÁGINA -->
+    <title>UNIT Academy | Arquitetura de Sistemas com IA</title>
+    <meta name="description" content="Domine a IA e a Programação Full Stack. Aprenda a criar sistemas, automações
+     e apps com o método IA-First da UNIT Academy.">
+    
+    <!-- COMPARTILHAMENTO (WhatsApp/Social) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Formação UNIT Academy - Inscrições Abertas">
+    <meta property="og:description" content="Domine IA, Full Stack e Automação. Método prático para criar seus próprios sistemas e produtos.">
+    <meta property="og:image" content="assets/img/capaBaner2.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- ÍCONES E FONTES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    
+    <!-- CSS DA PÁGINA -->
+    <link rel="stylesheet" href="css/treinamentos.css">
+
+    <!-- CSS DO PRELOADER (INLINE PARA CARREGAR INSTANTÂNEO) -->
+    <style>
+        #unit-preloader {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background-color: #050510; z-index: 99999;
+            display: flex; justify-content: center; align-items: center; flex-direction: column;
+            transition: opacity 0.6s ease-out, visibility 0.6s ease-out;
+        }
+        .preloader-content { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+        .preloader-logo { width: 80px; height: auto; margin: 0 auto 20px auto; animation: preloaderPulse 1.5s infinite alternate; filter: drop-shadow(0 0 15px rgba(124, 58, 237, 0.6)); }
+        .loading-bar-container { width: 200px; height: 4px; background: #1a1a2e; border-radius: 2px; overflow: hidden; position: relative; margin-bottom: 10px; }
+        .loading-bar { width: 100%; height: 100%; background: linear-gradient(90deg, #7c3aed, #00d4ff); position: absolute; left: -100%; animation: loadBar 1.5s infinite linear; }
+        .system-text { color: #a0a0b0; font-family: 'Poppins', sans-serif; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; animation: blinkText 1s infinite alternate; }
+        .preloader-hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+        @keyframes preloaderPulse { from { transform: scale(1); opacity: 0.8; } to { transform: scale(1.1); opacity: 1; filter: drop-shadow(0 0 25px rgba(0, 212, 255, 0.8)); } }
+        @keyframes loadBar { 0% { left: -100%; } 50% { left: 0%; } 100% { left: 100%; } }
+        @keyframes blinkText { from { opacity: 0.5; } to { opacity: 1; } }
+    </style>
+</head>
+
+<body>
+    <!-- PRELOADER UNIT -->
+<div id="unit-preloader">
+    <div class="preloader-content">
+        <img src="assets/img/1logo.png" alt="Carregando..." class="preloader-logo">
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
+        </div>
+        <p class="system-text">Inicializando Sistemas...</p>
+    </div>
+</div>
+
+    <!-- Botão Flutuante de Voltar -->
+    <a href="bio.html" class="back-btn">
+        <i class="fa-solid fa-user-astronaut"></i> <span class="desktop-only">Sobre o Autor</span>
+    </a>
+
+    <div class="container">
+
+        <!-- IDENTIFICAÇÃO -->
+        <div class="author-id">
+            Formação criada por <strong>Gustavo Capichoni</strong> · UNIT — Unidade de Integração Tecnológica
+        </div>
+
+        <!-- HERO SALES -->
+        <div class="header-sales">
+            <div class="pre-head">// MÉTODO IA-FIRST DEVELOPMENT</div>
+
+            <h1 class="main-head">
+                Arquitetura de Sistemas Digitais <br>
+                com <span style="color: var(--neon-blue);">Inteligência Artificial</span>
+            </h1>
+
+            <p class="sub-head">
+                Aprenda a planejar, estruturar e construir projetos digitais completos <br>
+                usando IA como executora técnica e você como arquiteto do sistema.
+            </p>
+
+            <p class="sub-head">
+                Uma formação prática para iniciantes e empreendedores que desejam
+                criar soluções reais — sem depender de equipes extensas.
+            </p>
+        </div>
+
+        <div class="vsl-box">
+            <video
+                id="unitVideo"
+                class="vsl-video"
+                playsinline
+                preload="metadata"
+                poster="assets/img/slide0.5.webp"
+            >
+                <source src="assets/videos/agente.mp4" type="video/mp4">
+            </video>
+
+            <div id="playOverlay" class="play-overlay">
+                <i class="fa-solid fa-play"></i>
+            </div>
+        </div>
+
+        <!-- RESUMO DOS PILARES -->
+        <div class="modules-summary">
+            <div class="summary-card"><i class="fa-solid fa-wand-magic-sparkles" style="color:var(--neon-blue)"></i> <span>IA Criativa</span></div>
+            <div class="summary-card"><i class="fa-solid fa-robot" style="color:var(--neon-green)"></i> <span>Automação</span></div>
+            <div class="summary-card"><i class="fa-solid fa-code" style="color:var(--primary)"></i> <span>Arquitetura Web</span></div>
+            <div class="summary-card"><i class="fa-solid fa-mobile-screen" style="color:var(--neon-orange)"></i> <span>Mobile</span></div>
+        </div>
+
+        <!-- O MÉTODO -->
+        <section class="method-section">
+
+            <h2 class="method-title">
+                O que é o método <span class="highlight-blue">IA-FIRST</span>
+            </h2>
+
+            <div class="method-grid">
+                <!-- O JEITO ANTIGO -->
+                <div class="method-box-old">
+                    <h4><i class="fa-solid fa-xmark"></i> Modelo Tradicional</h4>
+                    <p class="method-desc">
+                        Desenvolvimento centrado na escrita manual de código, alta dependência de sintaxe,
+                        execução operacional intensa e baixo aproveitamento de automação inteligente.
+                    </p>
+                </div>
+
+                <!-- O JEITO NOVO (SEU) -->
+                <div class="method-box-new">
+                    <div class="method-tag">MÉTODO UNIT</div>
+                    <h4><i class="fa-solid fa-check"></i> O Arquiteto de Soluções</h4>
+                    <p class="method-desc">
+                        No método <strong>IA-FIRST</strong>, a IA executa tarefas técnicas repetitivas.  
+                        Você atua como arquiteto: define lógica, valida código,
+                        organiza sistemas e toma decisões estruturais.
+                    </p>
+                </div>
+            </div>
+
+            <h3 class="method-footer">
+                <p>Velocidade é consequência, não objetivo. <br> </p> 
+                <strong>O foco está na construção de sistemas sólidos com <span style="color: var(--neon-green);">Autonomia Técnica Real.</span></strong>
+            </h3>
+
+        </section>
+
+        <!-- MANIFESTO -->
+        <div class="manifesto-box">
+            <h3 class="manifesto-title">
+                A proposta da UNIT
+            </h3>
+
+            <p class="manifesto-text">
+                Sabemos que, hoje em dia, o ativo mais valioso que existe é o seu <strong>Tempo</strong>.
+                A UNIT existe para formar profissionais capazes de conceber, estruturar e operar
+                seus próprios sistemas digitais, utilizando a Inteligência Artificial como
+                <strong>motor de escala</strong>.
+            </p>
+
+            <p class="manifesto-highlight">
+                Aqui, desenvolvemos mentalidade de arquiteto — não apenas execução técnica.<br>
+                Acreditamos que a tecnologia deve servir para potencializar o ser humano.<br>
+                O objetivo é garantir autonomia técnica para transformar ideias em projetos reais.
+            </p>
+
+            <p class="manifesto-text" style="color:var(--text-muted);">
+                Ao dominar IA e Programação, você conquista <strong>soberania digital</strong>. 
+                Passa a construir suas próprias ferramentas e sistemas, conquistando independência 
+                para evoluir profissionalmente, executar projetos com autonomia e realizar seus objetivos.
+            </p>
+
+            <p class="manifesto-author">
+                — Gustavo Capichoni
+            </p>
+        </div>
+
+        <!-- GRADE DE TREINAMENTOS -->
+        <section id="treinamentos" class="train-section">
+            <h2>Módulos de Capacitação Técnica</h2>
+            <p class="train-intro">
+                Escolha sua especialização ou garanta o acesso completo.
+            </p>
+
+            <div class="train-grid">
+
+                <!-- 01: IA Criativa -->
+                <div class="train-card" id="IAcriativa">
+                    <div class="card-badge badge-purple">Tendência</div>
+                    <video class="mural-video" autoplay muted loop playsinline poster="assets/img/slide2.webp">
+                        <source src="assets/videos/treinamento1.mp4" type="video/mp4">
+                    </video>
+                    <!-- NOVO TEXTO PARA O CARD 01 -->
+                    <h3>IA Criativa & Design</h3>
+                    <p>Elimine a dependência de designers. Crie identidade visual, vídeos e interfaces de nível estúdio.</p>
+                    <ul>
+                        <li>Engenharia de Prompt (Visual Master)</li>
+                        <li>Cinematografia & Motion com IA</li>
+                        <li>Humanos Digitais & Clonagem de Voz</li>
+                        <li>Criação de UI Kits (Web & Mobile)</li>
+                    </ul>
+                    
+                    <div class="card-footer">
+                        <span class="card-old-price">de R$ 247,00 por</span>
+                        <div class="card-price">
+                            <span class="currency">R$</span> 127<span class="cents">,00</span>
+                        </div>
+                        
+                        <!-- LINK DO CHECKOUT -->
+                        <a href="https://pay.kiwify.com.br/SEU_LINK_AQUI" class="train-btn-buy">
+                            GARANTIR ACESSO <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <button class="train-btn-outline MopenModal" data-train="criativa">
+                            Ver ementa técnica
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 02: Automação -->
+                <div class="train-card" id="bots">
+                    <div class="card-badge badge-green">Essencial</div>
+                    <video class="mural-video" autoplay muted loop playsinline poster="assets/img/ban4.webp">
+                        <source src="assets/videos/treinamento2.mp4" type="video/mp4">
+                    </video>
+                    <!-- NOVO TEXTO PARA O CARD 02 -->
+                    <h3>Automação & Bots</h3>
+                    <p>Construa sua força de trabalho digital. Domine o Backend, Python e a lógica de sistemas autônomos.</p>
+                    <ul>
+                        <li>Agentes Autônomos (WhatsApp/Telegram)</li> 
+                        <li>Web Scraping & Mineração de Dados</li> 
+                        <li>Integração de APIs & Back-end Python</li>
+                        <li>Trading Quantitativo (Robôs Financeiros)</li>
+                    </ul>
+
+                    <div class="card-footer">
+                        <span class="card-old-price">de R$ 599,00 por</span>
+                        <div class="card-price">
+                            <span class="currency">R$</span> 369<span class="cents">,00</span>
+                        </div>
+
+                        <a href="https://pay.kiwify.com.br/SEU_LINK_AQUI" class="train-btn-buy">
+                            GARANTIR ACESSO <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <button class="train-btn-outline MopenModal" data-train="automacao">
+                            Ver ementa técnica
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 03: Web -->
+                <div class="train-card" id="Full-Stack">
+                    <div class="card-badge badge-blue">Completo</div>
+                    <video class="mural-video" autoplay muted loop playsinline poster="assets/img/slide1.webp">
+                        <source src="assets/videos/treinamento3.1.mp4" type="video/mp4">
+                    </video>
+                    <!-- NOVO TEXTO PARA O CARD 03 (WEB) -->
+                    <h3>Web Full Stack</h3>
+                    <p>Não crie apenas sites, desenvolva Plataformas, SaaS e Dashboards complexos com arquitetura profissional.</p>
+                    <ul>
+                        <li>Arquitetura MVC & Engenharia de Software</li>
+                        <li>Vision-to-Code (Do Design ao Front-end)</li>
+                        <li>Banco de Dados SQL & Segurança de Dados</li>
+                        <li>Sistemas de Login & Painéis Administrativos</li>
+                    </ul>
+
+                    <div class="card-footer">
+                        <span class="card-old-price">de R$ 407,00 por</span>
+                        <div class="card-price">
+                            <span class="currency">R$</span> 289<span class="cents">,00</span>
+                        </div>
+
+                        <a href="https://pay.kiwify.com.br/SEU_LINK_AQUI" class="train-btn-buy">
+                            GARANTIR ACESSO <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <button class="train-btn-outline MopenModal" data-train="web">
+                            Ver ementa técnica
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 04: Mobile -->
+                <div class="train-card" style="border-color: var(--neon-orange);" id="apps">
+                    <div class="card-badge badge-new"><i class="fa-solid fa-star"></i> NOVO</div>
+                    <video class="mural-video" autoplay muted loop playsinline poster="assets/img/capaBaner.webp">
+                        <source src="assets/videos/inova.mp4" type="video/mp4">
+                    </video>
+                    <h3 style="color: var(--neon-orange);">Apps Mobile</h3>
+                    <!-- NOVO TEXTO PARA O CARD 04 (MOBILE) -->
+                    <h3>Apps Mobile</h3>
+                    <p>Domine a tela mais importante do mundo. Converta seus sistemas Web em Aplicativos Nativos (Android/iOS) e publique nas lojas.</p>
+                    <ul>
+                        <li>Tecnologia Wrapper (Web-to-App)</li>
+                        <li>Design Mobile-First & UX Nativa</li>
+                        <li>Acesso a Hardware (Câmera/GPS)</li>
+                        <li>Publicação na Google Play & App Store</li>
+                    </ul>
+
+                    <div class="card-footer">
+                        <span class="card-old-price">de R$ 677,00 por</span>
+                        <div class="card-price" style="color: var(--neon-orange);">
+                            <span class="currency">R$</span> 397<span class="cents">,00</span>
+                        </div>
+
+                        <a href="https://pay.kiwify.com.br/SEU_LINK_AQUI" class="train-btn-buy" style="background: var(--neon-orange); color: #000; box-shadow: 0 0 15px rgba(255,159,67,0.4);">
+                            GARANTIR ACESSO <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <button class="train-btn-outline MopenModal" data-train="mobile" style="color: var(--neon-orange); border-color: rgba(255,159,67,0.3);">
+                            Ver ementa técnica
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- MODAL (Oculto) -->
+            <div id="Mmodal" class="Mmodal">
+                <div class="Mmodal-content">
+                    <span class="Mclose">&times;</span>
+                    <h2 id="MmodalTitle"></h2>
+                    <p id="MmodalDesc"></p>
+                    <h3>O que você aprenderá:</h3>
+                    <ul id="MmodalList"></ul>
+                    <h3>Ao finalizar, você será capaz de:</h3>
+                    <p id="MmodalSkills"></p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- DEPOIMENTOS -->
+        <div id="comments-rotator" class="comments-section">
+            <h3>O que dizem nossos Alunos e Fundadores</h3>
+            <div id="comment-display" class="comment">
+                <div class="grl-avatar-small">⟬⧈⟭</div>
+                <div>
+                    <p class="user-name"></p>
+                    <p class="user-text"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SEÇÃO CERTIFICADO -->
+        <div class="cert-section">
+            <div class="cert-visual">
+                <img src="assets/img/certificado.png" alt="Certificado Profissional UNIT" class="cert-img">
+            </div>
+
+            <div class="cert-content">
+                <h3 class="cert-title">Certificação UNIT Oficial</h3>
+                <p class="cert-text">
+                    Ao finalizar a formação, você recebe um Certificado Profissional validando suas competências em 
+                    <span style="color: #ffd700;">IA, Full Stack e Automação</span>.
+                </p>
+                <ul class="cert-features">
+                    <li><i class="fa-solid fa-check"></i> Válido para currículo e LinkedIn</li>
+                    <li><i class="fa-solid fa-check"></i> Carga horária detalhada</li>
+                    <li><i class="fa-solid fa-check"></i> Chave de autenticação única</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- OFERTA FINAL -->
+        <div class="offer-card">
+            
+            <video autoplay muted loop playsinline class="video-bg" poster="assets/img/slide0.5.webp">
+                <source src="assets/videos/02.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+
+            <div class="conteudo-card">
+                <h2 style="font-size: 2rem; margin-bottom: 10px; position: relative; z-index: 5;">Acesso Vitalício UNIT Academy</h2>
+                <p style="color: #e0e0e0;">Adquira a formação Completa com Desconto</p>
+
+                <div style="margin: 10px 0;">
+                    <p style="font-size: 1.1rem; color: #aaa; text-decoration: line-through; margin-bottom: 0;">
+                        de R$ 1.182,00 por
+                    </p>
+                    
+                    <div class="price-new" style="line-height: 1;">
+                        R$ 697<span>,00</span>
+                    </div>
+                    
+                    <p style="color: #00ff9d; font-size: 1rem; margin-top: 10px; font-weight: 600;">
+                        ou 12x de R$ 59,90
+                    </p>
+                </div>
+
+                <!-- LINK DO CHECKOUT FINAL -->
+                <a href="pagamento/pagamento.php" class="btn-buy">
+                    QUERO ENTRAR AGORA <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <div class="security-footer">
+                    <div class="security-icons">
+                        <span><i class="fa-solid fa-lock"></i> Pagamento Seguro Kiwify</span>
+                        <span><i class="fa-solid fa-rotate-left"></i> 7 Dias de Garantia</span>
+                    </div>
+                    <p style="opacity: 0.7; font-size: 0.7rem;">
+                        Acesso imediato e vitalício a todas as trilhas atuais e futuras atualizações.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- UNIT NATIVE BOT -->
+    <div class="unit-bot-trigger" id="botTrigger">
+        <!-- A imagem é definida no CSS-->
+    </div>
+
+    <div class="unit-chat-window" id="chatWindow">
+        <div class="chat-header">
+            <div class="chat-title">
+                <img src="assets/img/1chatbot.png" class="chat-avatar-small" alt="Bot"> 
+                Assistente UNIT
+            </div>
+            <div class="chat-close" id="chatClose">&times;</div>
+        </div>
+        <div class="chat-body" id="chatBody">
+            <!-- JS injeta mensagens aqui -->
+        </div>
+    </div>
+
+
+    <!-- FOOTER SLIM  -->
+        <footer class="site-footer slim-footer">
+            <div class="footer-container">
+                
+                <div class="footer-bottom" style="border: none; padding-top: 0; flex-direction: column; gap: 15px;">
+                    
+                    <!-- Marca Simplificada -->
+                    <div style="opacity: 0.7; font-size: 0.9rem;">
+                        &copy; 2025 UNIT Academy · Tecnologia & Inteligência Artificial
+                    </div>
+
+                    <!-- Links Legais (Obrigatórios) -->
+                    <div class="legal-links">
+                        <a href="termos-e-acordos/termos-de-uso.html">Termos de Uso</a>
+                        <a href="termos-e-acordos/politica-de-privacidade.html">Política de Privacidade</a>
+                        <a href="termos-e-acordos/acordo-de-servico.html">Acordo de Serviço</a>
+                    </div>
+
+                    <!-- Suporte Rápido (Caso o cartão falhe) -->
+                    <div style="margin-top: 10px;">
+                        <a href="https://wa.me/5521996442487" target="_blank" style="color: var(--neon-green); font-size: 0.85rem; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 8px;">
+                            <i class="fab fa-whatsapp"></i> Precisa de ajuda para se inscrever?
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+    <!-- Scripts -->
+    <script src="js/gradeTreinamentos.js"></script>
+    
+    <script src="js/chatBot.js"></script>
+    
+    <script>
+        /* --- LÓGICA DO PRELOADER --- */
+    window.addEventListener("load", function() {
+        const preloader = document.getElementById("unit-preloader");
+        if (preloader) {
+            // Pequeno delay para garantir que a pessoa veja a animação (opcional)
+            setTimeout(() => {
+                preloader.classList.add("preloader-hidden");
+            }, 1000); // 1.0 segundos de exibição mínima
+        }
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TÍTULO DA ABA -->
+    <title>UNIT | Arquitetura de Soluções com IA</title>
+    
+    <!-- DESCRIÇÃO PARA O GOOGLE (SEO) -->
+    <meta name="description" content="A UNIT é um ecossistema educacional focado em formar arquitetos de soluções digitais,
+     utilizando Inteligência Artificial para criar sistemas, automações e produtos digitais.">
+
+    <!-- COMPARTILHAMENTO (WhatsApp/Social) -->
+    <!-- É aqui que a mágica do banner acontece -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="UNIT | Arquitetura de Soluções com IA">
+    <meta property="og:description" content="Pare de apenas digitar código. Aprenda a arquitetar sistemas, automações e produtos digitais usando IA como motor de execução.">
+    <meta property="og:image" content="assets/img/capaBaner2.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+    <!-- CSS PRINCIPAL -->
+    <link rel="stylesheet" href="css/index.css"> 
+    
+    <!-- PRELOADER (CSS Extra para o carregamento) -->
+    <style>
+        /* CSS DO PRELOADER PARA GARANTIR QUE CARREGUE PRIMEIRO */
+        #unit-preloader {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background-color: #050510; z-index: 99999;
+            display: flex; justify-content: center; align-items: center; flex-direction: column;
+            transition: opacity 0.6s ease-out, visibility 0.6s ease-out;
+        }
+        .preloader-content { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+        .preloader-logo { width: 80px; height: auto; margin: 0 auto 20px auto; animation: preloaderPulse 1.5s infinite alternate; filter: drop-shadow(0 0 15px rgba(124, 58, 237, 0.6)); }
+        .loading-bar-container { width: 200px; height: 4px; background: #1a1a2e; border-radius: 2px; overflow: hidden; position: relative; margin-bottom: 10px; }
+        .loading-bar { width: 100%; height: 100%; background: linear-gradient(90deg, #7c3aed, #00d4ff); position: absolute; left: -100%; animation: loadBar 1.5s infinite linear; }
+        .system-text { color: #a0a0b0; font-family: 'Poppins', sans-serif; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; animation: blinkText 1s infinite alternate; }
+        .preloader-hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+        @keyframes preloaderPulse { from { transform: scale(1); opacity: 0.8; } to { transform: scale(1.1); opacity: 1; filter: drop-shadow(0 0 25px rgba(0, 212, 255, 0.8)); } }
+        @keyframes loadBar { 0% { left: -100%; } 50% { left: 0%; } 100% { left: 100%; } }
+        @keyframes blinkText { from { opacity: 0.5; } to { opacity: 1; } }
+    </style>
+</head>
+
+<body>
+    <!-- PRELOADER UNIT -->
+<div id="unit-preloader">
+    <div class="preloader-content">
+        <img src="assets/img/1logo.png" alt="Carregando..." class="preloader-logo">
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
+        </div>
+        <p class="system-text">Inicializando Sistemas...</p>
+    </div>
+</div>
+
+<!-- HERO SECTION  -->
+<div class="hero-section" id="inicio">
+    
+
+    <div class="center-title">
+        <h1 class="main-title">𝑼𝑵𝑰𝑻</h1>
+        <span class="sub-title">Arquitetura de Soluções com Inteligência Artificial</span>
+    </div>
+
+    <!-- Vídeo de Fundo -->
+    <video id="mainVideo" class="video-fullscreen" preload="auto" playsinline autoplay muted loop poster="assets/img/capaBaner.webp">
+        <source src="assets/videos/apresentaçao.mp4" type="video/mp4" />
+    </video>
+
+    <!-- Overlay com Botão -->
+    <div id="overlay" class="overlay">
+        <button id="startBtn" class="start-btn"><i class="fa-solid fa-graduation-cap"></i> Acessar UNIT Academy</button>
+    </div>
+
+    <!-- Seta de Rolagem -->
+    <a href="#sobre" class="scroll-down-arrow">
+        <i class="fa-solid fa-angles-down"></i>
+    </a>
+</div>
+
+<!-- SOBRE A UNIT -->
+<section class="about-unit" id="sobre">
+    <div class="content-wrapper">
+        <h2>Sobre a UNIT Academy</h2>
+        <p class="sub-title">Unidade de Integração Tecnológica</p>
+
+        <p>
+            A UNIT é um ecossistema educacional voltado à formação de pessoas que desejam
+            construir projetos digitais utilizando Inteligência Artificial como força
+            executora e o humano como arquiteto das soluções.
+        </p>
+
+        <p>
+            Aqui, o foco não está em digitar código linha por linha, mas em aprender a
+            estruturar sistemas, definir fluxos, organizar regras de negócio e transformar
+            comandos bem definidos em aplicações reais por meio da IA.
+        </p>
+
+        <h2>Programar não é digitar. É arquitetar.</h2>
+
+        <p style="font-size: 1.05rem; margin-bottom: 50px; color: #a0a0b0;">
+            A UNIT não forma operadores de ferramentas nem dependentes de prompts prontos.
+            Formamos arquitetos de soluções capazes de orientar a IA para criar sistemas,
+            automações, bots e produtos digitais com clareza, controle e visão de longo prazo.
+        </p>
+
+        <div class="benefits-container">
+            <h3 class="benefits-title">O que você aprende a construir</h3>
+
+            <ul class="benefits-list">
+                <li class="benefit-item">
+                    <i class="fas fa-code benefit-icon"></i>
+                    <div>
+                        <strong class="benefit-strong">Sistemas e Aplicações Web</strong>
+                        <p class="benefit-desc">
+                            Criação de sites, sistemas web e aplicações completas utilizando
+                            IA para gerar código, enquanto você define a arquitetura,
+                            funcionalidades e integrações.
+                        </p>
+                    </div>
+                </li>
+
+                <li class="benefit-item">
+                    <i class="fas fa-robot benefit-icon"></i>
+                    <div>
+                        <strong class="benefit-strong">Automação e Bots Inteligentes</strong>
+                        <p class="benefit-desc">
+                            Desenvolvimento de automações, bots de atendimento, gerenciamento
+                            e agentes autônomos baseados em regras, lógica e objetivos bem
+                            definidos.
+                        </p>
+                    </div>
+                </li>
+
+                <li class="benefit-item">
+                    <i class="fas fa-wand-magic-sparkles benefit-icon"></i>
+                    <div>
+                        <strong class="benefit-strong">Design e Interfaces Digitais</strong>
+                        <p class="benefit-desc">
+                            Criação de interfaces, layouts e identidades visuais utilizando
+                            IA generativa aplicada ao contexto de sistemas e produtos digitais.
+                        </p>
+                    </div>
+                </li>
+
+                <li class="benefit-item">
+                    <i class="fas fa-chart-line benefit-icon"></i>
+                    <div>
+                        <strong class="benefit-strong">Robôs e Estratégias Automatizadas</strong>
+                        <p class="benefit-desc">
+                            Estruturação de robôs de negociação, monitoramento e tomada de
+                            decisão automatizada a partir de lógica, parâmetros e controle
+                            de risco definidos por você.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mission-block">
+            <p class="mission-text">
+                A UNIT existe para ensinar como transformar ideias em sistemas funcionais,
+                utilizando Inteligência Artificial como executora e o pensamento humano
+                como núcleo estratégico.
+            </p>
+            <p class="mission-quote">
+                "Aqui, você não aprende a escrever código. Você aprende a comandar sistemas."
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- GALERIA -->
+<section class="image-gallery">
+    <div class="gallery-item">
+        <img src="assets/img/ban3.webp" alt="Autonomia Técnica">
+        <p><strong>Autonomia Técnica</strong>
+        Capacidade de criar, ajustar e manter seus próprios sistemas digitais sem depender
+        de terceiros para cada alteração.</p>
+    </div>
+
+    <div class="gallery-item">
+        <img src="assets/img/ban4.webp" alt="Automação de Processos">
+        <p><strong>Automação Inteligente</strong>
+        Transformação de processos manuais em fluxos automatizados baseados em lógica,
+        regras e objetivos claros.</p>
+    </div>
+
+    <div class="gallery-item">
+        <img src="assets/img/ban6.webp" alt="Criação Digital">
+        <p><strong>Criação Digital</strong>
+        Desenvolvimento de produtos, interfaces e conteúdos digitais integrados a sistemas
+        reais e funcionais.</p>
+    </div>
+</section>
+
+<!-- HUB IA -->
+<section id="hub-ia" class="hub-ia-section">
+    <h2>Explore o Universo da IA com <br><span style="color: var(--neon-blue);">Possibilidades Ilimitadas</span></h2>
+    <p class="hub-ia-intro">
+       A UNIT apresenta o ecossistema das IAs mais poderosas do mundo.
+    </p>
+
+    <div class="ia-floating-texts">
+        <span>Arquitetura de Sistemas</span>
+        <span>Automação de Processos</span>
+        <span>Criação de Aplicações</span>
+        <span>Design Assistido por IA</span>
+        <span>Agentes Inteligentes</span>
+    </div>
+
+    <div class="ia-logos">
+         <!-- Google AI Studio -->
+            <div class="ia-item">
+                <div class="ia-glow-ring"></div>
+                <p class="ia-desc">Laboratório de Engenharia<br>e Prototipagem de Prompts.</p>
+                <!-- Salve o logo como google_ai_studio.png -->
+                <img src="assets/img/logos/aistudio.webp" alt="Google AI Studio" style="background-color: #fff;">
+                <p>AI Studio</p>
+            </div>
+                    
+            <!-- 1. CHATGPT -->
+            <div class="ia-item">
+            <div class="ia-glow-ring"></div>
+            <p class="ia-desc">Líder de mercado.<br>Ideal para tarefas generalistas.</p>
+            <img src="assets/img/logos/gpt.png" alt="ChatGPT OpenAI" style="background-color: black;">
+            <p>ChatGPT</p>
+            </div>
+
+            <!-- 2. CLAUDE -->
+            <div class="ia-item">
+            <div class="ia-glow-ring"></div>
+            <p class="ia-desc">Melhor interpretação de texto<br>e atendimento humanizado.</p>
+            <img src="assets/img/logos/claude.png" alt="Claude Anthropic" style="background-color: rgb(255, 255, 255);">
+            <p>Claude 3.5</p>
+            </div>
+            <!-- n8n -->
+            <div class="ia-item">
+                <div class="ia-glow-ring"></div>
+                <p class="ia-desc">Orquestração de fluxos<br>e automação sem limites.</p>
+                <!-- Salve o logo como n8n.png na pasta assets/img/logos/ -->
+                <img src="assets/img/logos/n8n-color.webp" alt="n8n Workflow" style="background-color: #fff;">
+                <p>n8n</p>
+            </div>
+
+            <!-- 3. GEMINI -->
+            <div class="ia-item">
+                <div class="ia-glow-ring"></div>
+                <p class="ia-desc">Integração nativa Google<br>e processamento multimodal.</p>
+                <img src="assets/img/logos/gemini.png" alt="Google Gemini" style="background-color: rgb(255, 255, 255);">
+                <p>Google Gemini</p>
+            </div>
+
+            <!-- 4. LLAMA 3 -->
+            <div class="ia-item" >
+            <div class="ia-glow-ring"></div>
+            <p class="ia-desc">Privacidade total.<br>Roda localmente (Open Source).</p>
+            <img src="assets/img/logos/llama.png" alt="Meta Llama 3" style="background-color: black;">
+            <p>Llama 3</p>
+            </div>
+
+            <!-- 5. DEEPSEEK -->
+            <div class="ia-item">
+            <div class="ia-glow-ring"></div>
+            <p class="ia-desc">Lógica avançada e<br>escrita de código complexo.</p>
+            <img src="assets/img/logos/deepseek.png" alt="DeepSeek AI" style="background-color: rgb(228, 255, 255);">
+            <p>DeepSeek</p>
+            </div>
+
+            <!-- 6. WHISPER -->
+            <div class="ia-item">
+            <div class="ia-glow-ring"></div>
+            <p class="ia-desc">Transforma áudios do WhatsApp<br>em texto para o robô ler.</p>
+            <img src="assets/img/logos/whisper-ai-logo-vector.svg" alt="OpenAI Whisper" style="background-color: wheat;">
+            <p>Whisper</p>
+            </div>
+
+            <!-- 7. PINECONE -->
+            <div class="ia-item">
+            <div class="ia-glow-ring"></div>
+            <p class="ia-desc">Memória de Longo Prazo.<br>Banco de dados vetorial.</p>
+            <img src="assets/img/logos/Pinecone_Logo_0.svg" alt="Pinecone Vector DB" style="background-color: wheat;">
+            <p>Pinecone</p>
+            </div>
+      
+             <div class="ia-item">
+                <div class="ia-glow-ring"></div>
+                <p class="ia-desc">O Editor de Código (IDE)<br>com IA Nativa.</p>
+                <img src="assets/img/logos/cursor.webp" alt="Cursor AI" style="background-color: #fff;">
+                <p>Cursor</p>
+            </div>
+            <!-- Midjourney -->
+            <div class="ia-item">
+                <div class="ia-glow-ring"></div>
+                <p class="ia-desc">Criação de Assets <br>para Apps/Web</p>
+                <img src="assets/img/logos/midjourney.png" alt="Midjourney">
+                <p>Midjourney</p>
+            </div>
+            <!-- RunwayML -->
+            <div class="ia-item">
+                <div class="ia-glow-ring"></div>
+                <p class="ia-desc">Geração de Vídeo<br> via Prompt</p>
+                <img src="assets/img/logos/runwayML.png" alt="RunwayML">
+                <p>RunwayML</p>
+            </div>
+            <!-- Leonardo AI -->
+            <div class="ia-item">
+                <div class="ia-glow-ring"></div>
+                <p class="ia-desc">Design de Interfaces<br> e Personagens</p>
+                <img src="assets/img/logos/leonardo.ai.png" alt="Leonardo AI">
+                <p>Leonardo AI</p>
+            </div>
+            <!-- Stable Diffusion -->
+            <div class="ia-item">
+                <div class="ia-glow-ring"></div>
+                <p class="ia-desc">Geração de imagem <br>em tempo real</p>
+                <img src="assets/img/logos/stability.ai.png" alt="Stable Diffusion">
+                <p>Stable Diffusion</p>
+            </div>
+            
+            <!-- Canva AI -->
+            <div class="ia-item">
+                <div class="ia-glow-ring"></div>
+                <p class="ia-desc">Design ágil <br>para social media</p>
+                <img src="assets/img/logos/canva.png" alt="Canva AI">
+                <p>Canva AI</p>
+            </div>
+            <!-- Remove BG -->
+            <div class="ia-item">
+                <div class="ia-glow-ring"></div>
+                <p class="ia-desc">Tratamento de <br>imagem automático</p>
+                <img src="assets/img/logos/removebg.png" alt="Remove BG">
+                <p>Remove BG</p>
+            </div>
+            <!-- Luma AI -->
+            <div class="ia-item">
+                <div class="ia-glow-ring"></div>
+                <p class="ia-desc">Apresentação 3D <br>de produtos</p>
+                <img src="assets/img/logos/luma.png" alt="Luma AI">
+                <p>Luma AI</p>
+            </div>
+            <!-- Descript -->
+            <div class="ia-item">
+                <div class="ia-glow-ring"></div>
+                <p class="ia-desc">Edição de conteúdo <br>com voz sintética</p>
+                <img src="assets/img/logos/descript.png" alt="Descript AI">
+                <p>Descript</p>
+            </div>
+            <!-- Synthesia -->
+            <div class="ia-item">
+                <div class="ia-glow-ring"></div>
+                <p class="ia-desc">Avatares para<br> treinamento/vendas</p>
+                <img src="assets/img/logos/synthesia.png" alt="Synthesia">
+                <p>Synthesia</p>
+            </div>
+            <!-- ElevenLabs -->
+            <div class="ia-item">
+                <div class="ia-glow-ring"></div>
+                <p class="ia-desc">Vozes neurais<br> idênticas às humanas</p>
+                <img src="assets/img/logos/elevenlabs.png" alt="ElevenLabs">
+                <p>ElevenLabs</p>
+            </div>
+           
+            
+         
+    </div>
+
+    
+</section>
+
+<!-- CTA FINAL -->
+<section id="cta-final" class="cta-final-section">
+    <div class="cta-container">
+        <video id="mainVideo" class="video-fullscreen" preload="auto" playsinline autoplay muted loop poster="assets/img/capaBaner.webp">
+            <source src="assets/videos/Genera.mp4" type="video/mp4">
+        </video>
+        <div class="cta-content">
+            <h2>Conheça a estrutura de formação da UNIT</h2>
+            <p>
+                Entenda como funciona a abordagem educacional da UNIT e como você pode
+                aprender a arquitetar soluções digitais utilizando Inteligência Artificial
+                como executora.
+            </p>
+            <button class="cta-btn" onclick="window.location.href='treinamentos.html'">Ver Plano de Formação</button>
+        </div>
+    </div>
+    
+</section>
+
+<!-- FOOTER PADRONIZADO (INDEX + FAQ) -->
+<footer class="site-footer">
+    <div class="footer-container">
+        
+        <!-- GRID PRINCIPAL -->
+        <div class="footer-grid">
+            
+           <!-- 1. MARCA & IDENTIDADE -->
+            <div class="footer-col brand-col">
+                <div class="brand-wrapper">
+                    <img src="assets/img/1logo.png" alt="UNIT Logo" class="footer-img">
+                    <div class="footer-logo">UNIT</div>
+                </div>
+                <p>
+                    A UNIT é uma organização focada em educação tecnológica e Inteligência Artificial.
+                    Atuamos na formação técnica aplicada e em consultoria estratégica para automação, arquitetura de sistemas e escala de negócios.
+                </p>
+            </div>
+
+            <!-- 2. INSTITUCIONAL -->
+            <div class="footer-col">
+                <h4>Institucional</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html#sobre">UNIT</a></li>
+                    <li><a href="pulsem.html">Manifesto & Visão</a></li>
+                    <li><a href="bio.html">Founder & Tech Lead</a></li>
+                    <li><a href="unit_faq.html">Dúvidas Frequentes</a></li>
+                </ul>
+            </div>
+
+            <!-- 3. SOLUÇÕES (Links da Index) -->
+            <div class="footer-col">
+                <h4>Soluções</h4>
+                <ul class="footer-links">
+                    <li><a href="treinamentos.html#treinamentos">Treinamentos</a></li>
+                    <li><a href="treinamentos.html#IAcriativa">IA Criativa & Design</a></li>
+                    <li><a href="treinamentos.html#bots">Automação & Bots</a></li>
+                    <li><a href="treinamentos.html#Full-Stack">Web Full Stack</a></li>
+                    <li><a href="treinamentos.html#apps">Apps Mobile</a></li>
+                </ul>
+            </div>
+
+            <!-- 4. CONECTE-SE -->
+            <div class="footer-col">
+                <h4>Conecte-se</h4>
+                <div class="social-row">
+                    
+                    <!-- 1. WhatsApp (O Vendedor) - Essencial para B2C -->
+                    <a href="https://wa.me/5521996442487" target="_blank" class="social-btn">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+
+                    <!-- 2. Instagram (Vitrine) -->
+                    <a href="https://www.instagram.com/gustavo_kali_/" target="_blank" class="social-btn">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    
+                    <!-- 3. YouTube (Conteúdo Profundo) -->
+                    <a href="https://www.youtube.com/@gustavo_kali8" target="_blank" class="social-btn">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+
+                    <!-- 4. TikTok (Viral/Descoberta) -->
+                    <a href="https://www.tiktok.com/@gustavo_kali_" target="_blank" class="social-btn">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+
+                </div>
+                <p class="footer-address">
+                    Rio de Janeiro, Brasil<br>
+                    Atendimento Global
+                </p>
+            </div>
+        </div>
+
+        <!-- BARRA FINAL -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 UNIT Academy. Engenharia de Sistemas & Arquitetura de Soluções com IA.</p>
+            
+            <div class="legal-links">
+                <a href="termos-e-acordos/termos-de-uso.html">Termos de Uso</a>
+                <a href="termos-e-acordos/politica-de-privacidade.html">Política de Privacidade</a>
+                <a href="termos-e-acordos/acordo-de-servico.html">Acordo de Serviço</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/index.js"></script>
+<script>
+    /* --- LÓGICA DO PRELOADER --- */
+window.addEventListener("load", function() {
+    const preloader = document.getElementById("unit-preloader");
+    if (preloader) {
+        // Pequeno delay para garantir que a pessoa veja a animação (opcional)
+        setTimeout(() => {
+            preloader.classList.add("preloader-hidden");
+        }, 1000); // 1.0 segundos de exibição mínima
+    }
+});
+</script>
+
+</body>
+</html>
